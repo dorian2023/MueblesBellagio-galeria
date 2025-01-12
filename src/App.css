@@ -6,3 +6,46 @@
 
 }
 
+.gradient-button {  
+  background: linear-gradient(90deg, #d4af37, #000); /* Degradado dorado a negro */  
+  color: white;  
+  padding: 0.5rem 1rem; /* Ajuste de espacio */  
+  border-radius: 0.375rem; /* Bordes redondeados */  
+  text-align: center; /* Centra el texto */  
+  display: inline-block; /* Asegura que el botón se comporte correctamente */  
+  transition: background 0.3s ease, color 0.3s ease; /* Transiciones suaves */  
+  font-weight: bold; /* Negrita para el texto */  
+  position: relative; /* Permite usar pseudo-elementos para animación */  
+  overflow: hidden; /* Evita que el contenido adicional sobrepase el container */  
+}  
+
+.gradient-button:hover {  
+  background: linear-gradient(90deg, #ffffff, #d4af37); /* Degradado blanco a dorado al pasar el mouse */  
+  color: #000; /* Cambia el color de texto a negro al hacer hover */  
+}  
+
+.gradient-button::after {  
+  content: '';  
+  position: absolute;  
+  width: 100%;  
+  height: 100%;  
+  background: rgba(255, 255, 255, 0.2); /* Efecto de brillo sutil */  
+  top: 0;  
+  left: 0;  
+  opacity: 0;  
+  transition: opacity 0.5s ease; /* Transición suave para el brillo */  
+  pointer-events: none; /* Evita que el pseudo-elemento interfiera con los clics */  
+}  
+
+.gradient-button:hover::after {  
+  opacity: 1; /* Muestra el brillo al hacer hover */  
+}  
+
+.gradient-button span {  
+  display: inline-block; /* Permite animar el texto */  
+  transition: transform 0.3s ease; /* Transición para la animación del texto */  
+}  
+
+.gradient-button:hover span {  
+  transform: scale(1.1); /* Aumenta el tamaño del texto al hacer hover */  
+}

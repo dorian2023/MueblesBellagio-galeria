@@ -5,7 +5,7 @@ import { productosData } from "./../../data";
 function Book({ title, imgSrc, onClick }) {
   return (
     <div
-      className="flex items-center cursor-pointer w-24 flex-col gap-1 bg-black "
+      className="flex items-center cursor-pointer w-24 flex-col bg-none shadow-xl hover:shadow-[#FFD700]"
       onClick={onClick}
     >
       <h5
@@ -21,7 +21,7 @@ function Book({ title, imgSrc, onClick }) {
       <img
         alt={`image of ${title}`}
         src={imgSrc}
-        className="w-full h-full m-auto"
+        className="w-auto md:w-full h-full m-auto"
       />
     </div>
   );
@@ -70,18 +70,18 @@ const SearchImagenes = () => {
       <div className="flex justify-center w-full h-14">
         <input
           id="searchInput"
-          placeholder="Nicole"
+          placeholder="Aqui el nombre del producto.."
           type="text"
           maxLength={70}
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-          className="block w-2/5 absolute p-4 ps-4 text-sm text-gray-900 border border-red-900 rounded-lg bg-gray-50 focus:ring-red-500 focus:border-red-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+          className="block w-2/5 absolute p-4 ps-4 text-sm text-gray-900 border border-gold rounded-sm bg-gray-50 focus:ring-gold-light focus:border-gold-light dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gold dark:text-white dark:focus:ring-gold dark:focus:border-gold-light hover:shadow-md hover:shadow-gold"
         />
       </div>
       <MagicMotion>
         <div
           style={{ display: "flex", flexWrap: "wrap", gap: "0.65em" }}
-          className="w-full justify-center"
+          className="w-full justify-center pt-6"
         >
           {productosData
             .filter(({ title }) =>
@@ -124,7 +124,7 @@ const SearchImagenes = () => {
             style={{
               maxWidth: "900%",
               maxHeight: "90%",
-              border: "1px solid red",
+              border: "1px solid gold",
             }}
           />
         </div>
