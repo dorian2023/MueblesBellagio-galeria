@@ -5,23 +5,13 @@ import { productosData } from "./../../data";
 function Book({ title, imgSrc, onClick }) {
   return (
     <div
-      className="flex items-center cursor-pointer w-24 flex-col bg-none shadow-xl hover:shadow-[#FFD700]"
+      className="md:flex items-center cursor-pointer w-24 flex-col bg-none shadow-xl hover:shadow-[#FFD700]"
       onClick={onClick}
     >
-      <h5
-        className="text-sm"
-        style={{
-          textAlign: "center",
-          fontWeight: "bold",
-          fontSize: "1.1em",
-        }}
-      >
-        {/* {title} */}
-      </h5>
       <img
         alt={`image of ${title}`}
         src={imgSrc}
-        className="w-auto md:w-full h-full m-auto"
+        className="w-full md:w-full h-full m-auto"
       />
     </div>
   );
@@ -70,7 +60,7 @@ const SearchImagenes = () => {
       <div className="flex justify-center w-full h-14">
         <input
           id="searchInput"
-          placeholder="Aqui el nombre del producto.."
+          placeholder="Producto.."
           type="text"
           maxLength={70}
           value={searchText}
@@ -80,8 +70,8 @@ const SearchImagenes = () => {
       </div>
       <MagicMotion>
         <div
-          style={{ display: "flex", flexWrap: "wrap", gap: "0.65em" }}
-          className="w-full justify-center pt-6"
+          style={{ gap: "0.4em" }}
+          className="grid grid-cols-3  md:flex md:flex-wrap w-full md:justify-center justify-around pt-6"
         >
           {productosData
             .filter(({ title }) =>

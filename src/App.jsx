@@ -14,7 +14,7 @@ function App() {
             className="relative w-3/12 sm:w-3/12 md:w-1/6 h-1/6"
           />
           <a
-            href="https://www.pruebabellagio.odoo.com"
+            href="https://bellagioprueba.odoo.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gold text-black py-2 px-4 rounded w-auto h-10 transition-all duration-300 ease-in-out transform hover:scale-110 hover:bg-gold hover:text-black hover:shadow-md hover:shadow-gold"
