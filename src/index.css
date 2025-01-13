@@ -9,7 +9,7 @@ html, body {
 } 
 
 
-#root {  
+body {  
     background-image: url('./assets/kamran-abdullayev-LLS74TRAseM-unsplash.jpg'); /* Cambia la ruta a tu imagen */  
     background-size: cover;     /* Esto hará que la imagen cubra todo el fondo */  
     background-position: center; /* Centra la imagen */  
