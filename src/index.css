@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 html, body {  
-    height: 100%; /* Asegura que el html y body ocupen todo el alto de la pantalla */  
-    margin: 0;    /* Elimina márgenes por defecto para evitar espacios en la pantalla */  
-
+    height: 100%;
+    margin: 0;
+    background-color: black;    
 } 
 
 
-body {  
-    background-image: url('./assets/kamran-abdullayev-LLS74TRAseM-unsplash.jpg'); /* Cambia la ruta a tu imagen */  
-    background-size: cover;     /* Esto hará que la imagen cubra todo el fondo */  
-    background-position: center; /* Centra la imagen */  
-    background-repeat: no-repeat; /* Evita que la imagen se repita */  
+body{  
+    background-image: url('./assets/kamran-abdullayev-LLS74TRAseM-unsplash.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }  
